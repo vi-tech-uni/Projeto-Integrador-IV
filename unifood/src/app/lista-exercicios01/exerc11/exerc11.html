@@ -1,0 +1,3 @@
+<p>exerc11 works!</p>
+
+<p>{{nome}}</p> <p>Preço: {{preco | currency: 'BRL'}}</p> <p> Quantidade: {{quantidade}} <button (click)="diminuir()" [disabled]="quantidade === 1">-</button> <button (click)="aumentar()">+</button> </p> <p>Total: {{preco * quantidade | currency: 'BRL'}}</p> <button (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button> @if (mensagem) { <p>{{mensagem}}</p> }

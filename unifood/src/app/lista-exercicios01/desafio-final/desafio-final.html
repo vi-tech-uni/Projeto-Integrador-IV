@@ -1,0 +1,2 @@
+<p>desafio-final works!</p>
+<label>Nome do aluno: <input [(ngModel)]="nomeAluno"></label> <p>Você digitou: {{nomeAluno}}</p> <p> Disciplinas: {{quantidadeDisciplinas}} <button (click)="diminuir()" [disabled]="quantidadeDisciplinas === 1">-</button> <button (click)="aumentar()">+</button> </p> <button (click)="realizarMatricula()" [disabled]="nomeAluno === ''">Realizar Matrícula</button> @if (mensagem) { <p>{{mensagem}}</p> }

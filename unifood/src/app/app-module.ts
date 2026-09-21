@@ -1,13 +1,13 @@
+import { ListaExercicios01Module } from "./lista-exercicios01/lista-exercicios01-module";
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Exerc01 } from './ListaExercício01/exerc01/exerc01';
 
 @NgModule({
-  declarations: [App, Exerc01],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [App],
+  imports: [BrowserModule, AppRoutingModule, ListaExercicios01Module],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
